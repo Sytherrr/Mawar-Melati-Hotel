@@ -1,0 +1,162 @@
+body {
+            margin: 0;
+            line-height: normal;
+        }
+        .rounded-rectangle {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 20px;
+            background-color: #0a0a0a;
+            width: 1240px;
+            height: 950px;
+        }
+        .username {
+            position: absolute;
+            top: 371px;
+            left: 233px;
+            font-weight: 500;
+        }
+        .password {
+            position: absolute;
+            top: 485px;
+            left: 233px;
+            font-weight: 500;
+            color: #fcf6f6;
+            display: inline-block;
+            width: 187px;
+            height: 103px;
+        }
+        .username-field {
+            position: absolute;
+            top: 361px;
+            left: 485px;
+            border-radius: 15px;
+            background-color: #fff;
+            width: 522px;
+            height: 73px;
+        }
+        .password-field {
+            position: absolute;
+            top: 473px;
+            left: 485px;
+            border-radius: 15px;
+            background-color: #fff;
+            width: 522px;
+            height: 73px;
+        }
+        .email {
+            position: absolute;
+            top: 597px;
+            left: 233px;
+            font-weight: 500;
+            color: #fcf6f6;
+            display: inline-block;
+            width: 187px;
+            height: 103px;
+        }
+        .email-field {
+            position: absolute;
+            top: 585px;
+            left: 485px;
+            border-radius: 15px;
+            background-color: #fff;
+            width: 522px;
+            height: 73px;
+        }
+        .group-child {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 20px;
+            background-color: #f31414;
+            width: 251px;
+            height: 79px;
+        }
+        .regist {
+            position: absolute;
+            top: 16px;
+            left: 76px;
+            font-weight: 500;
+        }
+        .login-btn {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 251px;
+            height: 79px;
+        }
+        .regis-btn {
+            position: absolute;
+            top: 739px;
+            left: 756px;
+            width: 251px;
+            height: 79px;
+            text-align: center;
+            font-size: 32px;
+        }
+        .logo-child {
+            position: absolute;
+            top: 85px;
+            left: 154.57px;
+            border-radius: 50%;
+            background-color: #e60b31;
+            width: 64px;
+            height: 66px;
+        }
+        .logo-item {
+            position: absolute;
+            top: 0px;
+            left: 24.57px;
+            border-radius: 50%;
+            background-color: #e60b31;
+            width: 128px;
+            height: 133px;
+        }
+        .mawar {
+            margin: 0;
+        }
+        .mawar-melati {
+            position: absolute;
+            top: 22.89px;
+            left: 0px;
+            line-height: 142.11%;
+            display: inline-block;
+            width: 246.6px;
+            height: 199.7px;
+        }
+        .logo {
+            position: absolute;
+            top: 65px;
+            left: 497px;
+            width: 246.6px;
+            height: 222.6px;
+            text-align: center;
+            font-size: 40px;
+            font-family: Righteous;
+        }
+        .login-card {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1240px;
+            height: 950px;
+        }
+        .regis-card {
+            position: absolute;
+            top: 258px;
+            left: 660px;
+            width: 1240px;
+            height: 950px;
+        }
+        .desktop-11 {
+            width: 100%;
+            position: relative;
+            background-color: #fff;
+            height: 1466px;
+            overflow: hidden;
+            text-align: left;
+            font-size: 36px;
+            color: #fff;
+            font-family: Poppins;
+        }

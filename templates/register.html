@@ -2,14 +2,43 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet"  href="static/register.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap" />
 </head>
 <body>
-    <h1>Register</h1>
-    <form method="post" action="/register">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <button type="submit">Register</button>
-    </form>
+   <div class="desktop-11">
+      <div class="regis-card">
+         <div class="login-card">
+            <div class="rounded-rectangle"></div>
+            <form method="post" action="/register">
+                <div class="username">username</div>
+                <input type="text" class="username-field" name="username" required>
+                <div class="password">password</div>
+                <input type="password" class="password-field" name="password" required>
+                <div class="email">email</div>
+                <input type="email" class="email-field" name="email" required>
+                <button type="submit" class="regis-btn">
+                    <div class="login-btn">
+                        <div class="login-btn">
+                            <div class="login-btn">
+                                <div class="group-child"></div>
+                                <div class="regist">Register</div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </form>
+            <div class="logo">
+               <div class="logo-child"></div>
+               <div class="logo-item"></div>
+               <div class="mawar-melati">
+                  <p class="mawar">MAWAR</p>
+                  <p class="mawar">MELATI</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </body>
 </html>

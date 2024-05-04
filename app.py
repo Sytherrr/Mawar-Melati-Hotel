@@ -1,18 +1,17 @@
 import sqlite3
-from flask import Flask, render_template, request, redirect, url_for, session, g
+from flask import Flask, render_template, request, redirect, url_for, session, g, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 app.secret_key = 'secret'
 
-# Configure your database
 DATABASE = 'hotel.db'
 
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
         db = g._database = sqlite3.connect(DATABASE)
-        db.row_factory = sqlite3.Row  # This line changes the configuration
+        db.row_factory = sqlite3.Row
     return db
 
 @app.teardown_appcontext
@@ -63,7 +62,7 @@ def login():
 def rooms():
     conn = get_db()
     cursor = conn.cursor()
-    rooms = cursor.execute("SELECT * FROM room WHERE availability = 1").fetchall()
+    rooms = cursor.execute("SELECT * FROM room").fetchall()
     return render_template('rooms.html', rooms=rooms)
 
 @app.route('/book/<int:room_id>', methods=['GET', 'POST'])
@@ -84,6 +83,7 @@ def book(room_id):
         cursor.execute("UPDATE room SET availability = 0 WHERE id = ?", (room_id,))
         conn.commit()
 
+        flash('Booking successful!', 'success')
         return redirect(url_for('index'))
     return render_template('book.html', room=room)
 
